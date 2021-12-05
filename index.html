@@ -7,34 +7,61 @@
     <title>MovieMania</title>
 </head>
 <body>
-    
-    <header>
-        <form  id="form">
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title"><a style="color:white;text-decoration: none;" href="./index.html">
+            Movie Mania
+            </a>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav-links">
+          <a href="https://github.com/pandeyprashant0311/MovieMania" target="_blank">Github</a>
+          <a href="./about.html" target="_blank">About</a>
+          <a><form  id="form">
             <input type="text" placeholder="Search" id="search" class="search">
-        </form>
-    </header>
-    <div id="tags"></div>
-    <div id="myNav" class="overlay">
-
-        <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      
-        <!-- Overlay content -->
-        <div class="overlay-content" id="overlay-content"></div>
-        
-        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
-        
-        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
-
+        </form></a>
+        </div>
       </div>
-    <main id="main"></main>
-    <div class="pagination">
-        <div class="page" id="prev">Previous Page</div>
-        <div class="current" id="current">1</div>
-        <div class="page" id="next">Next Page</div>
+        <div id="particles-js">
+        <div class="childofparticle">
+            <div id="tags"></div>
+            <div id="myNav" class="overlay">
 
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+                <!-- Overlay content -->
+                <div class="overlay-content" id="overlay-content"></div>
+                
+                <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+                
+                <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+            </div>
+            <main id="main"></main>
+            <div class="pagination">
+                <div class="page" id="prev">Previous Page</div>
+                <div class="current" id="current">1</div>
+                <div class="page" id="next">Next Page</div>
+
+            </div>
+        </div>    
     </div>
-
+    <!-- Import Particles.js and app.js files -->
+    <script src=
+        "particles.js">
+    </script>
+    <script src=
+        "app.js">
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
