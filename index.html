@@ -25,6 +25,7 @@
         <div class="nav-links">
           <a href="https://github.com/pandeyprashant0311/MovieMania" target="_blank">Github</a>
           <a href="./about.html" target="_blank">About</a>
+            <button onclick="mytoggleFunction()">Toggle dark mode</button>
           <a><form  id="form">
             <input type="text" placeholder="Search" id="search" class="search">
         </form></a>
@@ -63,5 +64,12 @@
         "app.js">
     </script>
     <script src="script.js"></script>
+    
+<script>
+function mytoggleFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+    </script>
 </body>
 </html>
