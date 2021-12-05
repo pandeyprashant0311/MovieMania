@@ -375,8 +375,3 @@ main{
 .dots .dot.active{
     border-color: orange;
 }
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
